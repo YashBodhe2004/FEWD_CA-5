@@ -1,68 +1,205 @@
-/* src/styles.css */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-  }
+ 
+  background-image: url("https://t4.ftcdn.net/jpg/05/70/89/21/240_F_570892147_doTpsSf0vMDppZHVEfUFwXdm8n8n7OrF.jpg");
+ background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1 ;
   
-  .App {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  align-items: center;
+}
+.App {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5vh;
+}
+
+#title {
+  margin-top: 1vh;
+  font-size: 5vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px ;
+  color: #ff0000;
+}
+
+#searchBar {
+  height: 6vh;
+  width: 70vh;
+  margin-top: 2vh;
+  border-radius: 4vh;
+  margin-left: 0vh;
+  padding-left: 20px;
+}
+
+.bookData {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+#bookImg {
+  margin-top: 30vh;
+  height: 45vh;
+  width: 30vh;
+  border: 1vh solid #a9a7a3;
+  border-radius: 2vh;
+  padding: 3vh;
+}
+
+#bookImg:hover {
+  background-color: #f34500;
+}
+
+.registerBtn {
+  display: flex;
+  border-radius: 1%;
+  border-color: #e8e8e8;
+}
+
+#registerBtn {
+  margin-top: 2vh;
+  height: 6vh;
+  width: 15vh;
+  margin-right: 1vh;
+  border-radius: 3vh;
+}
+
+#infoBtn {
+  height: 4vh;
+  width: 4vh;
+  border-radius: 3vh;
+  margin-right: 5vh;
+  margin-top: 2.75vh;
+}
+
+#bookTitle {
+  color: #fbf9f5;
+  margin-top: 2vh;
+  font-size: 3vh;
+  font-family: 'Roboto', sans-serif;
+  text-decoration-line: unset;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
   
-  .App-header {
-    background-color: #282c34;
-    color: white;
-  }
+
+}
+
+#bookTitle:hover {
+  color: #ff0000;
+}
+
+#bookInfo {
+  display: flex;
+}
+
+#bookRating {
+  color: #f1eadc;
+  margin-top: 1vh;
+  margin-left: 10vh;
+}
+
+#star {
+  margin-top: 0.5vh;
+  margin-left: 1vh;
+}
+
+#bookPrice {
+  color: #fffdf8;
+  margin-top: 1vh;
+  margin-left: 1vh;
+}
+
+.bookData {
+  margin-left: 23vh;
+}
+
+#bookTitle {
+  width: 30vh;
+  text-align: center;
+  margin-left: 2vh;
+}
+
+#registrationForm {
+  margin-top: 1vh;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  height: 95vh;
+  width: 70vh;
+  border: 1vh solid #ffffff;
+  border-radius: 2vh;
+  margin-left: 55vh;
+}
+
+#formTitle {
+  margin-top: 3vh;
+  font-size: 6vh;
+  font-family: 'Roboto', sans-serif;
+  text-decoration-line: underline;
+  color: #ebe8e2;
+  text-align: center;
+}
+
+#formFields {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0vh;
+  margin-top: 10vh;
+  margin-left: 6vh;
+  border-radius: 10vh;
+}
+
+#nameField {
+  height: 5vh;
+  width: 55vh;
+  border-radius: 1vh;
+}
+
+#emailField {
+  height: 5vh;
+  width: 55vh;
+  border-radius: 1vh;
+}
+
+#passwordField {
+  height: 5vh;
+  width: 55vh;
+  border-radius: 1vh;
+}
+
+#confirmPasswordField {
+  height: 5vh;
+  width: 55vh;
+  margin-top: 2vh;
+  border-radius: 1vh;
+}
+
+#error {
+  color: red;
+  font-size: 2vh;
+  margin-right: 5vw;
+}
+
+#checkbox {
+  display: flex;
+  margin-left: 5vh;
+  margin-top: 1vh;
+}
+
+#signupBtn {
+  margin-top: 3vh;
+  height: 7vh;
+  width: 25vh;
+  border-radius: 3vh;
+  color: #000000;
+  background-color: greenyellow;
   
-  .navbar {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  h1 {
-    margin: 0;
-    color: #fff;
-  }
-  
-  .search-bar {
-    padding: 8px;
-    margin-left: 20px;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  
-  li {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: #000;
-  }
-  
-  img {
-    border-radius: 8px;
-    width: 200px;
-    height: 300px;
-  }
-  
-  .register-button {
-    padding: 8px 12px;
-    background-color: #61dafb;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
+}
+#signupBtn:hover{
+  background-color: #ff0000;
+}
+
+#loginLink {
+  margin-top: 1.5vh;
+  font-size: 2vh;
+}
